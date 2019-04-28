@@ -1,0 +1,6 @@
+GIT
+descargar de: https://git-scm.com/
+
+recomendable usar batch en linea de comandos
+usa el de linux
+
