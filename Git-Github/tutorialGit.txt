@@ -4,3 +4,111 @@ descargar de: https://git-scm.com/
 recomendable usar batch en linea de comandos
 usa el de linux
 
+para abrir la consola de git en la carpeta del proyecto
+ubicarse en la carpeta, click derecho y elegir 'Git bash here' y se abrira una consola de git
+
+configurar usuario git para el sistema operativo (decirle quien usa el proyecto, importante al hacer el primer comit, para modificar la configuracion volver a usar los mismos comandos con los nuevos datos)
+git config --global user.email "jpablos2011.2@gmail.com"
+git config --global user.name "JPablos"
+
+Inicializar el proyecto
+git init
+
+--------------------------------------------
+
+Ver archivos que tenemos y su estado (salen en rojo los que no estan agregados y en verde los que estan agregados)
+git status
+
+--------------------------------------------
+
+Agregar archivos 
+git add <nombre carpeta o nombre archivo>
+
+git add .
+agrega todos los archivos del entorno de trabajo
+
+--------------------------------------------
+
+Primer commit
+git commit 
+
+se abre el editor de texto que se configuro en la instalacion para editar git, en la primera linea poner un mensaje indicando informacion acerca de los cambios realizados.
+
+--------------------------------------------
+
+Ver los commits realizados
+git log
+
+--------------------------------------------
+
+para revertir cambios (cuando se modifica un archivo pero no se lo agrega con add)
+git checkout <nombre archivo>
+
+el archivo vuelve al estado del ultimo commit
+
+--------------------------------------------
+
+Ver las diferencias de un archivo
+git diff <nombre archivo>
+
+presenta las diferencias del archivo
+
+--------------------------------------------
+
+Para ignorar un archivo se debe crear en el proyecto un archivo llamado ".gitignore" y ahi ponemos las carpetas y archivos a ignorar, ojo el archivo ".gitignore" si se debe agregar al proyecto
+
+--------------------------------------------
+
+Para grabar directamente el mensaje cuando se hace el commit
+
+git commit -m "Mensaje del commit"
+
+se realizara el commit directamente sin abrir el editor de texto
+
+--------------------------------------------
+
+Para crear una version alternativa de mi proyecto
+
+git branch
+
+Vemos las versiones creadas
+
+git branch <nombre version>
+
+--------------------------------------------
+
+Para cambiarme de rama(version)
+
+git checkout <nombre version>
+
+se cambio de version
+
+git branch
+
+verificar en que rama me encuentro
+
+Las carpetas y archivos que se crean o modifican en la rama solo seran visibles en la rama, no en el master, cuando se cambie a la rama master no sera visibles
+
+--------------------------------------------
+
+clonar un repositorio de github
+
+copiar la direccion del repositorio
+en la consola escribir:
+
+git clone <direccion repositorio>
+
+--------------------------------------------
+
+subir a GITHUB
+
+Entrar a la cuenta de github, crear un nuevo repositorio
+
+una vez creado el repositorio copiar el comando con la direccion del repositorio creado ejemplo: "git remote add origin https://github.com/jpablos78/Tutoriales.git"
+y pegarlo en la linea de comandos de git y enter
+
+luego ejecutar este comando
+
+git push -u origin master
+
+solicitara usuario y clave de cuenta de github y subira los archivos al repositorio de github
