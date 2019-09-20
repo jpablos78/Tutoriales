@@ -1,0 +1,25 @@
+https://stackoverflow.com/questions/48479524/how-to-impliment-a-sidenav-navigation-drawer-with-a-mini-variant
+https://stackblitz.com/edit/angular-8zy3pi?file=src%2Fapp%2Fapp.component.html
+https://angular-8zy3pi.stackblitz.io/
+
+
+install primeng
+https://www.cloudhadoop.com/2018/07/primeng-with-angular-6-example-from.html
+
+tutorial flexbox/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://scanlibs.com/angular-ui-development-primeng/
+
+sobreescribir css primeng
+https://angularcss.blogspot.com/2018/04/overriding-default-styling-of-primeng.html
+
+tutorial flexgrid
+https://www.primefaces.org/primeng/#/flexgrid
+https://github.com/primefaces/primeflex
+
+
+
+--app de productos de android
+https://gumroad.com/d/6adf7890e75fda2269cc987cb9d36e51
+

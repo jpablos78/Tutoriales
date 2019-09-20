@@ -1,0 +1,15 @@
+Pasos para solucionar error "Module build failed: Error: Cannot find module 'node-sass'"
+
+Uninstall node-sass: npm uninstall node-sass
+Eliminar si existe package-lock.json
+clean the cache: npm cache clean --force
+ejecutar: npm update
+
+/*pasos opcionales*/
+ejecutar: npm install
+ejecutar: npm update
+/*fin pasos opcionales*/
+
+install node sass: npm install node-sass
+
+https://stackoverflow.com/questions/46515077/unable-to-install-node-sass-in-my-project
