@@ -1,0 +1,37 @@
+Reactive Forms
+
+Marcar como dirty
+this.form.get('txtNombre').markAsDirty();
+this.form.controls.txtApellido.markAsDirty();
+https://stackoverflow.com/questions/52763639/reactive-forms-with-primeng-controls-not-firing
+
+
+this.form.controls['txtConfirmarClave'].
+
+
+https://alligator.io/angular/reactive-forms-custom-validator/
+https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example
+https://stackoverflow.com/questions/44449673/custom-validator-on-reactive-form-for-password-and-confirm-password-matching-get
+https://stackoverflow.com/questions/51767885/angular-form-email-validator-not-working-as-expected
+https://jasonwatmore.com/post/2018/05/10/angular-6-reactive-forms-validation-example
+https://malcoded.com/posts/angular-reactive-form-validation/
+
+
+https://codecraft.tv/courses/angular/es6-typescript/promises/
+https://medium.com/@jmz12/callbacks-promesas-y-async-await-que-alguien-me-explique-514137cb57e2
+http://blog.enriqueoriol.com/2016/04/novedades-es6-promises.html
+https://blog.fullstacktraining.com/promises-in-javascript/
+
+
+https://www.infragistics.com/community/blogs/b/infragistics/posts/how-to-create-custom-validators-for-angular-reactive-forms
+https://medium.com/@Shifs/iterative-reactive-forms-in-angular6-with-custom-validators-9c62504224aa
+https://dzone.com/articles/how-to-create-custom-validators-in-angular
+https://stackblitz.com/edit/angular-yhbuqn-s5lmtv?file=app%2Finput-error-state-matcher-example.ts
+https://stackoverflow.com/questions/51605737/confirm-password-validation-in-angular-6
+
+https://stackoverflow.com/questions/51605737/confirm-password-validation-in-angular-6
+https://stackblitz.com/edit/angular-yhbuqn-s5lmtv?file=app%2Finput-error-state-matcher-example.ts
+
+https://alligator.io/angular/reactive-forms-custom-validator/
+
+https://stackoverflow.com/questions/45633221/formgroup-get-field-value-typeerror-cannot-read-property-get-of-undefined?rq=1
