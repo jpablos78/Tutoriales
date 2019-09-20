@@ -1,0 +1,59 @@
+angular instalar prime-ng
+
+una vez creado el proyecto en vscode en una terminal ejecutar estos comandos:
+
+npm install primeng --save
+npm install primeicons --save
+
+agregar browseranimationmodule
+npm install @angular/animations --save
+
+luego ir a module.ts
+y agregar en seccion imports
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+y en el array imports agregar
+
+imports: [
+    ...
+	BrowserAnimationsModule,
+	//...
+],
+
+--opcional fuentes
+npm install font-awesome --save
+
+Si da error "Error: Can't resolve '@angular/cdk/scrolling'" ejecutar
+npm install @angular/cdk --save
+
+instalar los estilos:
+se instala el estilo nova-light en node_modules/primeng/resources/themes estan otros estilos que se puede elegir
+
+elegir entre:
+copiar el siguiente codigo en el head:
+
+<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+
+o ir al archivo angular.json y copiar el codigo dentro de los array styles (hay 2)
+
+"styles": [
+  "node_modules/primeicons/primeicons.css",
+  "node_modules/primeng/resources/themes/nova-light/theme.css",
+  "node_modules/primeng/resources/primeng.min.css",
+  //...
+],
+
+cerrar y volver a abrir el proyecto
+
+en el module.ts se deben poner los imports de los componentes que se van a utilizar
+seccion import
+import { ButtonModule } from 'primeng/button';
+
+seccion array import
+imports: [
+    ...
+    ButtonModule
+  ],

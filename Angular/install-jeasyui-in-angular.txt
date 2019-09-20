@@ -1,0 +1,32 @@
+install jeasyui in angular
+
+https://www.jeasyui.com/download/ng.php
+
+1) ejecutar:
+npm install ng-easyui --save
+
+2) importar los estilos css en el archivo styles.css
+
+@import '~ng-easyui/themes/material/easyui.css';
+@import '~ng-easyui/themes/angular.css';
+@import '~ng-easyui/themes/icon.css';
+
+o en angular.json en la seccion styles (hay 2) poner
+
+"styles": [
+    "styles.css",
+    "node_modules/ng-easyui/themes/material/easyui.css",
+    "node_modules/ng-easyui/themes/angular.css",
+    "node_modules/ng-easyui/themes/icon.css"
+],
+
+
+3) en app.module.ts
+en los imports(cabecera)
+import { EasyUIModule } from 'ng-easyui/components/easyui/easyui.module';
+
+en imports(array)
+imports: [
+    ...
+    EasyUIModule
+  ]

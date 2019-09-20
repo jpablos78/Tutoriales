@@ -1,0 +1,18 @@
+Git en visual studio code:
+
+https://lemoncode.net/lemoncode-blog/2017/12/12/git-y-visual-studio-code
+
+Inicializar un repositorio
+
+Si cuando presionamos el boton de GIT y aparece un mensaje de "no source control providers registered" es porque no esta inicializado el github en ese proyecto
+
+En visual studio code presionar (Crtl+Shift+P) y escribir "Git: Initialize Repository" y seleccionar la carpeta en donde esta el proyecto.
+
+
+Clonar un repositorio de Github
+
+Para mostrar la paleta de comandos: podemos pulsamos la combinación de teclas CTRL+SHIFT+P o desde el menú view seleccionamos "command palette".
+
+Desde ahí tecleamos git clone nos pide la ruta del repositorio y ya ponemos clonar (si es necesario nos pide credenciales).
+
+Luego seleccionamos la carpeta en donde queremos clonar el repositorio
