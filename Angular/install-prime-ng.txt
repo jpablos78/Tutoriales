@@ -8,7 +8,7 @@ npm install primeicons --save
 agregar browseranimationmodule
 npm install @angular/animations --save
 
-luego ir a module.ts
+luego ir a app.module.ts
 y agregar en seccion imports
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -48,7 +48,7 @@ o ir al archivo angular.json y copiar el codigo dentro de los array styles (hay 
 
 cerrar y volver a abrir el proyecto
 
-en el module.ts se deben poner los imports de los componentes que se van a utilizar
+en el app.module.ts se deben poner los imports de los componentes que se van a utilizar
 seccion import
 import { ButtonModule } from 'primeng/button';
 
@@ -57,3 +57,40 @@ imports: [
     ...
     ButtonModule
   ],
+
+  //si luego de instalar la ultima version del cdk da un error del tipo
+Uncaught TypeError: Object(...) is not a function
+./node_modules/@angular/cdk/esm5/scrolling.es5.js 663:58-76
+"export 'ɵɵdefineInjectable' was not found in '@angular/core'
+warnings @ client:154
+onmessage @ socket.js:41
+EventTarget.dispatchEvent @ sockjs.js:170
+(anonymous) @ sockjs.js:887
+SockJS._transportMessage @ sockjs.js:885
+EventEmitter.emit @ sockjs.js:86
+WebSocketTransport.ws.onmessage @ sockjs.js:2961
+wrapFn @ zone.js:1332
+push../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask @ zone.js:423
+push../node_modules/zone.js/dist/zone.js.Zone.runTask @ zone.js:195
+push../node_modules/zone.js/dist/zone.js.ZoneTask.invokeTask @ zone.js:498
+invokeTask @ zone.js:1744
+globalZoneAwareCallback @ zone.js:1770
+
+solucion 1
+instalar una version anterior que funciona del cdk
+
+npm uninstall @angular/cdk
+npm install @angular/cdk@7.3.7
+
+solucion 2(en revision esta dando problemas)
+hacer una actualiacion de todas las dependencias.
+
+ng update --all --force
+
+si da este error
+ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.6.0 but 3.6.3 was found instead.
+"typescript": "~3.4.0"
+
+en package.json
+poner: "typescript": "~3.4.0" 
+grabar y luego:  npm install

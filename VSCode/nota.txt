@@ -1,0 +1,11 @@
+para cambiar la version de un paquete
+1ra forma
+ir a package.json buscar el paquete y actualizar a la version correspondiente ej
+esta: "typescript": "~3.6.6"
+actualizar a: "typescript": "~3.4.0"
+grabar y ejecutar: npm install
+
+2da forma
+desinstalar el paquete desde linea de comandos e instalar la version requerida ej:
+npm uninstall @angular/cdk
+npm install npm install @angular/cdk@7.3.7
