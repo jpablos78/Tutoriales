@@ -1,0 +1,4 @@
+PrimeNG Datatable check checkboxes in code
+
+https://stackoverflow.com/questions/42810666/primeng-datatable-check-checkboxes-in-code
+

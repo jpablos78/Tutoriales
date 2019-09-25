@@ -1,0 +1,37 @@
+--para poder usar las funciones de json en sql server 2016-2017 en adelante 
+--la base de datos debe tener un nivel de compatibilidad de 130
+
+--si se usa por ejemplo el siguiente query:
+DECLARE @json NVarChar(2048) = N'{
+   "String_value": "John",
+   "DoublePrecisionFloatingPoint_value": 45,
+   "DoublePrecisionFloatingPoint_value": 2.3456,
+   "BooleanTrue_value": true,
+   "BooleanFalse_value": false,
+   "Null_value": null,
+   "Array_value": ["a","r","r","a","y"],
+   "Object_value": {"obj":"ect"}
+}';
+
+SELECT * FROM OpenJson(@json);
+
+da el siguiente error: 
+Mens. 208, Nivel 16, Estado 1, Línea 12
+El nombre de objeto 'OpenJson' no es válido.
+
+-----------------------------------------------------------
+--para ver el nivel de compatibilidad desde t-sql
+USE FacturacionElectronica;  
+GO  
+SELECT compatibility_level  
+FROM sys.databases WHERE name = 'FacturacionElectronica';  
+GO  
+
+-----------------------------------------------------------
+--para cambiar el nivel de compatibilidad
+ALTER DATABASE FacturacionElectronica  
+SET COMPATIBILITY_LEVEL = 130;  
+GO 
+
+
+https://docs.microsoft.com/en-us/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-2017

@@ -1,0 +1,3 @@
+Javascript: filtrar elementos de un array con .filter()
+
+https://ed.team/blog/javascript-filtrar-elementos-de-un-array-con-filter
