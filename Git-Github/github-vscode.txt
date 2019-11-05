@@ -16,3 +16,16 @@ Para mostrar la paleta de comandos: podemos pulsamos la combinación de teclas C
 Desde ahí tecleamos git clone nos pide la ruta del repositorio y ya ponemos clonar (si es necesario nos pide credenciales).
 
 Luego seleccionamos la carpeta en donde queremos clonar el repositorio
+
+----------------------------------------------------------------------
+
+Si cuando se quiere hacer un push y aparece el siguiente mensaje:
+"your repository has not remote configured" nos falta configurar el repositorio remoto
+poner en la linea de comandos:
+
+git remote add origin https://github.com/jpablos78/primeng-admin-lte.git
+
+git remote -v
+
+https://help.github.com/en/github/using-git/adding-a-remote
+https://stackoverflow.com/questions/44557960/your-repository-has-no-remotes-configured-to-push-to
