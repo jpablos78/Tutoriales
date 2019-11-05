@@ -1,0 +1,19 @@
+-- validar un json en php
+
+1)
+---------------------------------------------------------
+$ob = json_decode($json);
+if($ob === null) {
+ // $ob is null because the json cannot be decoded
+}
+---------------------------------------------------------
+
+2)
+---------------------------------------------------------
+$data = json_decode($json_string);
+if (is_null($data)) {
+   die("Something dun gone blowed up!");
+}
+---------------------------------------------------------
+
+https://stackoverflow.com/questions/7841670/how-to-validate-json-in-php

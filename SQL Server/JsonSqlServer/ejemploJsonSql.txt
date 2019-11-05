@@ -1,0 +1,97 @@
+1)
+---------------------------------------------
+DECLARE @json NVARCHAR(MAX) = N'[  
+  {  
+    "Order": {  
+      "Number":"SO43659",  
+      "Date":"2011-05-31T00:00:00"  
+    },  
+    "AccountNumber":"AW29825",  
+    "Item": {  
+      "Price":2024.9940,  
+      "Quantity":1  
+    }  
+  },  
+  {  
+    "Order": {  
+      "Number":"SO43661",  
+      "Date":"2011-06-01T00:00:00"  
+    },  
+    "AccountNumber":"AW73565",  
+    "Item": {  
+      "Price":2024.9940,  
+      "Quantity":3  
+    }  
+  }
+]'  
+   
+SELECT *
+FROM OPENJSON ( @json )  
+WITH (   
+              Number   varchar(200)   '$.Order.Number',  
+              Date     datetime       '$.Order.Date',  
+              Customer varchar(200)   '$.AccountNumber',  
+              Quantity int            '$.Item.Quantity',  
+              [Order]  nvarchar(MAX)  AS JSON  
+ )
+---------------------------------------------
+
+2)
+---------------------------------------------
+DECLARE @json NVARCHAR(MAX) = N'{
+    "data": [
+        {
+            "id_menu_favoritos": 50,
+            "id_menu": 5,
+            "nombre_menu": "Cambio de Clave",
+            "acceso": "S",
+            "estado_menu_favoritos": "A",
+            "descripcion_estado_menu_favoritos": "ACTIVO"
+        },
+        {
+            "id_menu_favoritos": 51,
+            "id_menu": 6,
+            "nombre_menu": "Favoritos",
+            "acceso": "S",
+            "estado_menu_favoritos": "A",
+            "descripcion_estado_menu_favoritos": "ACTIVO"
+        },
+        {
+            "id_menu_favoritos": 1,
+            "id_menu": 4,
+            "nombre_menu": "Mantenimiento de Usuarios",
+            "acceso": "N",
+            "estado_menu_favoritos": "A",
+            "descripcion_estado_menu_favoritos": "ACTIVO"
+        }
+    ]
+}'
+
+set @json = ''
+
+if (ISJSON(@json) > 0)
+begin
+	select 'valid'
+end
+else
+begin
+	select 'not valid'
+end
+
+SELECT *
+into #tmp
+FROM OPENJSON ( @json, '$.data' )  
+WITH (   
+              id_menu_favoritos int, 
+              id_menu int,  
+              nombre_menu varchar(150),  
+              acceso char(1),  
+              estado_menu_favoritos char(1),
+			  descripcion_estado_menu_favoritos varchar(9)
+ )
+
+ select *
+ from #tmp
+
+ drop table #tmp
+---------------------------------------------

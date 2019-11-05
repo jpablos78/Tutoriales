@@ -1,0 +1,2 @@
+manejo de errores en sql
+https://www.sqlshack.com/es/como-poder-implementar-el-manejo-de-errores-en-sql-server/

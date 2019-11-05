@@ -1,0 +1,38 @@
+admin lte download
+https://github.com/ColorlibHQ/AdminLTE/releases
+
+fuente:
+https://www.youtube.com/watch?v=47UW2U50TDA
+
+Pasos para la version 2.4.10
+
+1) crear un nuevo proyecto en angular
+2) descargar el admin lte y descomprimir
+3) copiar las carpetas "bower_components, dist y plugins" dentro de la carpeta assets
+4) copiar el codigo js y css desde AdminLTE 2.4.10 starter.html al archivo index.html
+    - en el header copiar todas las importaciones css
+    - al final del body estan el codigo de js que se debe copiar
+5) corregir las rutas del codigo que se copio en el paso anterior para que apunten a la carpeta assets
+6) generar los componentes "Header, Menu, Content, Footer y setting" (se recomienda crear la carpeta components/shared y poner ahi esos componentes)
+    - ng g c components/shared/header -is (para que no se creen los estilos, aplicar a los otro componentes)    
+7) copiar el codigo html que corresponde a cada componente desde starter.html 
+    - copiar -> 'class="hold-transition skin-blue sidebar-mini"' en el body del index.html
+    - luego copiar el "wraper", debe quedar asi:
+        <div class="wrapper">
+            <app-root></app-root>
+        </div>
+    - en el header component copiar todo el <!-- Main Header -->
+        corregir las rutas para que apunten a la carpeta assets
+    - en el menu component copiar todo el <!-- Left side column. contains the logo and sidebar -->        
+        corregir las rutas para que apunten a la carpeta assets
+    - en el content component copiar todo el <!-- Content Wrapper. Contains page content -->
+    - en el footer component copiar todo el <!-- Main Footer -->
+    - en el setting component copiar todo el <!-- Control Sidebar -->
+8) Ir a app.component.html y copiar los componentes creados
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <app-content></app-content>
+    <app-footer></app-footer>
+    <app-setting></app-setting>        
+
+-------------------------------------------------------------------------------
