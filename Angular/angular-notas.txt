@@ -30,3 +30,24 @@ en html
 <div [innerHTML]="htmlStr"></div>
 
 https://alligator.io/angular/innerhtml-binding-angular/
+
+--------------------------------------------------------------------------------
+
+Angular call function in foreach
+Use arrow functions
+
+this.clientService.selectedClient.forEach((client) => {
+    this.getIntake(); // not working
+});
+
+https://stackoverflow.com/questions/48033805/angular-call-function-in-foreach
+
+--------------------------------------------------------------------------------
+
+How do I remove a particular element from an array in JavaScript?
+
+myArray = myArray.filter(function( obj ) {
+  return obj.id !== id;
+});
+
+https://stackoverflow.com/questions/21659888/javascript-find-and-remove-object-in-array-based-on-key-value
