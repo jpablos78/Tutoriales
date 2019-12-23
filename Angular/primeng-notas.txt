@@ -2,3 +2,26 @@ PrimeNG Datatable check checkboxes in code
 
 https://stackoverflow.com/questions/42810666/primeng-datatable-check-checkboxes-in-code
 
+-------------------------------------------------------------------------------
+
+presentar columnas de una tabla en modo responsive
+
+<td *ngFor="let col of columns">
+     <span class="ui-column-title">{{ col.header }}</span> 
+     <span *ngIf="col.header === 'Opportunity Id'"
+      ><a routerLink="/proposal">{{ rowData[col.field] }}</a></span
+    >
+    <span *ngIf="col.header !== 'Opportunity Id'">{{
+      rowData[col.field]
+    }}</span>
+  </td>
+
+  https://stackoverflow.com/questions/57418169/why-are-table-headers-not-displayed-in-responsive-primeng-table
+
+-------------------------------------------------------------------------------
+
+espacion entre elementros
+
+<button pButton type="button" label="New" icon="fa-plus" style="margin-right:10px"></button>
+
+-------------------------------------------------------------------------------

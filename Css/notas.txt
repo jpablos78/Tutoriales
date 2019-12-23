@@ -1,0 +1,29 @@
+ocultar y presentar un div(u otro elemento) con css
+
+To hide an element, use:
+
+display: none;
+visibility: hidden;
+
+
+To show an element, use:
+
+display: block;
+visibility: visible;
+The difference is:
+
+Visibility handles the visibility of the tag, the display handles space it occupies on the page.
+
+If you set the visibility and do not change the display, even if the tags are not seen, it still occupies space.
+
+https://stackoverflow.com/questions/20598568/how-to-display-and-hide-a-div-with-css
+https://cybmeta.com/display-none-vs-visibility-hidden-y-tu-como-escondes-las-cosas
+-------------------------------------------------------------------------------
+
+media querys
+
+https://www.arsys.es/blog/programacion/diseno-web/media-queries-css3/
+https://desarrolloweb.com/articulos/medidas-estandar-pantallas-media-queries.html
+
+https://franciscoamk.com/unidades-de-medida-en-css/
+https://abalozz.es/sobre-como-usar-px-em-rem-y-percent-en-responsive-design/

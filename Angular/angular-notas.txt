@@ -1,3 +1,32 @@
 Javascript: filtrar elementos de un array con .filter()
 
 https://ed.team/blog/javascript-filtrar-elementos-de-un-array-con-filter
+
+-------------------------------------------------------------------------------
+
+error angular 8
+
+Angular @ViewChild() error: Expected 2 arguments, but got 1
+
+solucion:
+@ViewChild('dt', { static: false, }) dt: any;
+
+https://stackoverflow.com/questions/56704164/angular-viewchild-error-expected-2-arguments-but-got-1
+
+-------------------------------------------------------------------------------
+ 
+espacio entre elementos
+
+style="margin-right:10px"
+
+-------------------------------------------------------------------------------
+
+agregar desde component elementos html
+
+en componente
+htmlStr: string = '<strong>The Tortoise</strong> &amp; the Hare';
+
+en html
+<div [innerHTML]="htmlStr"></div>
+
+https://alligator.io/angular/innerhtml-binding-angular/
