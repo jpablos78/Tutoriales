@@ -51,3 +51,10 @@ myArray = myArray.filter(function( obj ) {
 });
 
 https://stackoverflow.com/questions/21659888/javascript-find-and-remove-object-in-array-based-on-key-value
+
+---
+revisar sobre binding
+https://stackoverflow.com/questions/37672052/angular-template-how-to-bind-rxjs-observable-and-read-its-properties
+
+---que se ejecute codigo despues de un for.
+https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop
