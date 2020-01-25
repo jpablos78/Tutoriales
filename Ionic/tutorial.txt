@@ -1,0 +1,43 @@
+Instalacion
+-instalar node.js
+-instalar visual studio code
+-instalar angular
+
+ir a la pagina https://ionicframework.com/
+
+documentacion: https://ionicframework.com/docs
+
+tipear en la linea de comandos: npm install -g ionic
+tipear: ionic start
+pide el nombre del proyecto y framework a usar.
+pide la plantilla a usar (de preferencia seleccionar blank)
+
+luego de creado el proyecto abrir el vscode y arrastar el proyecto creado.
+
+abrir la consola de comandos de vscode
+
+Para correr el proyecto tipear: ionic serve
+
+tipear: ionic generate
+y se abre un menu en donde se elige lo que deseo generar
+seleccionar 'page', se nos pide un nombre/path
+
+convertir una aplicacion ionic en una app
+
+compilar mi aplicacion ionic: ionic build
+
+ir a https://capacitor.ionicframework.com/
+se necesita tambien android studio
+
+en la aplicacion escribir: npm install --save @capacitor/core @capacitor/cli
+luego de que se termine de instalar: npx cap init
+poner nombre de app y id
+
+esto genera un archivo capacitor.config.json
+
+escribir: npx cap add android
+
+esto crea una carpeta llamada android en donde esta el proyecto en android
+
+para ejecutarlo escribir: npx cap open android
+

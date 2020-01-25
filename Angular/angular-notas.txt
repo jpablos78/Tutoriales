@@ -58,3 +58,48 @@ https://stackoverflow.com/questions/37672052/angular-template-how-to-bind-rxjs-o
 
 ---que se ejecute codigo despues de un for.
 https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop
+
+ejecutar evento on blur desde input text
+<input type="text" [(ngModel)]="myModel" (blur)="onBlurMethod()">
+
+Some other events can be used in angular -
+
+(focus)="myMethod()"
+(blur)="myMethod()" 
+(submit)="myMethod()"  
+(scroll)="myMethod()"
+
+-------------------------------------------------------------------------------
+
+validaciones en el formulario con blur submit
+a veces la validacion del campo o formulario se la debe hacer cuando el campo pierde el enfoque(blur)
+o se debe realizar en el submit, para ello se debe hacer lo siguiente:
+
+blur
+aplicar a un campo especifico
+
+this.userForm = this.fb.group({
+	name: ["", { validators: [Validators.required], updateOn: "blur" }],
+	email: ["", [Validators.required, Validators.email]]
+});
+
+aplicar a todo el formulario
+
+this.userForm = this.fb.group(
+  {
+    name: ["", [Validators.required]],
+    email: ["", [Validators.required, Validators.email]]
+  },
+  { updateOn: "blur" }
+);
+
+submit
+this.userForm = this.fb.group(
+  {
+    name: ["", [Validators.required]],
+    email: ["", [Validators.required, Validators.email]]
+  },
+  { updateOn: "submit" }
+);
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+ejecutar evento on blur desde input text
+<input type="text" onblur="myFunction()">

@@ -23,3 +23,16 @@ https://github.com/primefaces/primeflex
 --app de productos de android
 https://gumroad.com/d/6adf7890e75fda2269cc987cb9d36e51
 
+
+
+https://medium.com/@yonem9/angular-qu%C3%A9-narices-es-eso-del-data-binding-y-los-pipes-f1a094eefb7f
+
+
+--form validation
+https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example
+
+--form validation with change, onblur, submit
+https://fiyazhasan.me/angular-forms-validation-updateon-blur/
+
+key envents
+https://alligator.io/angular/binding-keyup-keydown-events/
