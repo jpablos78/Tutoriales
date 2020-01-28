@@ -36,3 +36,15 @@ https://fiyazhasan.me/angular-forms-validation-updateon-blur/
 
 key envents
 https://alligator.io/angular/binding-keyup-keydown-events/
+
+--pagina donde se explica como retornar un observable sin necesidad de un http
+https://www.concretepage.com/angular/angular-rxjs-tap
+
+--cargar los nodos de un arbol en angular desde un array que tiene los indices
+https://github.com/jigneshkhatri/primeng-treenode-preselect/blob/master/treeNodes.component.ts
+
+--formas de convertir un array a string
+https://www.samanthaming.com/tidbits/62-5-ways-to-convert-value-to-string/
+
+--json parse and stringify
+https://alligator.io/js/json-parse-stringify/

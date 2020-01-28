@@ -1,0 +1,3 @@
+https://www.techiediaries.com/angular-router-route-parameters/
+
+https://angular-2-training-book.rangle.io/routing/routeparams

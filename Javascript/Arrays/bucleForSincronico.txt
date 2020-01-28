@@ -1,0 +1,31 @@
+Esperar que se termine de ejecutar un bucle for para continuar con la ejecucion del programa
+
+--no funciona----------------------
+array.forEach((item) => {
+  // do something with item
+});
+
+console.log('ejecutar despues')
+-----------------------------------
+
+--no funciona----------------------
+async function processArray(array) {
+  array.forEach(async (item) => {
+    await func(item);
+  })
+  console.log('Done!');
+}
+-----------------------------------
+
+--funciona old school :) ----------
+async function processArray(array) {
+  for (const item of array) {
+    await delayedLog(item);
+  }
+  console.log('Done!');
+}
+------------------------------------
+https://lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795/
+
+con promesas
+https://codeburst.io/javascript-async-await-with-foreach-b6ba62bbf404

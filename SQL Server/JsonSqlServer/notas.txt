@@ -5,3 +5,8 @@ https://docs.microsoft.com/en-us/sql/t-sql/functions/openjson-transact-sql?view=
 https://database.guide/isjson-examples-in-sql-server-t-sql/
 
 https://sqlwithmanoj.com/2015/11/01/reading-json-string-with-nested-elements-sql-server-2016-part-3/
+
+
+en un arbol de un padre obtener todos los hijos
+
+https://stackoverflow.com/questions/18106947/cte-recursion-to-get-tree-hierarchy/18111876

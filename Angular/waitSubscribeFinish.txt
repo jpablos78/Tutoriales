@@ -1,0 +1,57 @@
+--para esperar a que un subscribe finalize y continuar ejecutando el codigo despues de eso.
+
+getNumber(value) {
+    return this.myService.getApi(value).pipe(tap(data => {
+        this.myVariable = data;
+    }));
+}
+
+set() {
+    if (this.value == 1) {
+      this.getNumber(firstNumber).subscribe(() => {
+        this.newVariable = this.myVariable;
+      });
+    }
+    else {
+      this.getNumber(secondNumber).subscribe(() => {
+        this.newVariabe = this.myVariable + 1;
+      });
+   }
+};
+
+https://stackoverflow.com/questions/54888671/angular-6-wait-for-subscribe-to-finish
+
+otra solucion
+
+https://stackoverflow.com/questions/41912629/angular2-wait-until-observable-finishes-in-if-condition
+
+----------------------------------------------------------------------------------------------
+usuando guards ejemplo
+
+canActivate(route: ActivatedRouteSnapshot): Observable<boolean> {
+    const operation = route.data.operation;
+
+    return this.login().map(bool => {
+      if(!bool && !this.tokenService.isAuthenticated()) {
+        return false;
+      }
+      return true;
+      }
+    })
+}    
+
+login() {
+  // use map instead!
+  return this.loginService.getToken().map((user) => {
+    console.log('token returned..');
+    if (user && user.token) {
+      this.tokenService.storeToken(user.token);
+      return true;
+    }
+    return false;
+  });
+}
+
+https://stackoverflow.com/questions/47759807/angular-4-guard-with-subscription
+
+----------------------------------------------------------------------------------------------
