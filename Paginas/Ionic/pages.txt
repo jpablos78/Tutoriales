@@ -2,3 +2,6 @@ https://www.djamware.com/post/5d12b5b880aca754f7a9d1f6/ionic-4-angular-8-tutoria
 
 https://ionicframework.com/docs/api/item-sliding
 
+ionic y primeng
+https://stackoverflow.com/questions/55440957/how-can-i-use-primeng-rating-components-in-ionic-4
+https://stackoverflow.com/questions/55042325/how-can-i-use-primeng-components-in-ionic-4
