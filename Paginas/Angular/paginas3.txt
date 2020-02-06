@@ -14,6 +14,13 @@ https://devdactic.com/ionic-multi-app-shared-library/
 
 angular and ionic
 https://stackoverflow.com/questions/55330085/create-ionic-4-app-inside-angular-cli-projects-structure
+https://stack247.wordpress.com/2019/03/11/integrate-ionic-in-existing-angular-project/
+
+https://devdactic.com/ionic-multi-app-shared-library/
+https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project/
+https://angular.io/guide/file-structure
+https://octoperf.com/blog/2019/08/22/kraken-angular-workspace-multi-application-project/
+
 
 tamano de pantalla
 https://stackoverflow.com/questions/45350716/detect-window-size-using-angular-4
