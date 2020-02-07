@@ -21,6 +21,8 @@ https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project/
 https://angular.io/guide/file-structure
 https://octoperf.com/blog/2019/08/22/kraken-angular-workspace-multi-application-project/
 
+--actualizar angular
+https://webintegral.com.co/blog/como-actualizar-angular-a-lo-bestia/
 
 tamano de pantalla
 https://stackoverflow.com/questions/45350716/detect-window-size-using-angular-4
@@ -28,3 +30,7 @@ https://scotch.io/tutorials/detect-responsive-screen-sizes-in-angular
 
 routing condicional
 https://stackoverflow.com/questions/34660263/angular2-conditional-routing
+
+////
+error TS1086: An accessor cannot be declared in an ambient context.
+actalizar el tipescript y si da error de version acualizar el angular.
