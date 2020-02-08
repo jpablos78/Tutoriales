@@ -5,3 +5,6 @@ https://ionicframework.com/docs/api/item-sliding
 ionic y primeng
 https://stackoverflow.com/questions/55440957/how-can-i-use-primeng-rating-components-in-ionic-4
 https://stackoverflow.com/questions/55042325/how-can-i-use-primeng-components-in-ionic-4
+
+para sobreescribir estilos css de primeng en ionic
+https://stackoverflow.com/questions/57972400/change-the-color-of-selected-tab-of-tabmenu-primeng-style
