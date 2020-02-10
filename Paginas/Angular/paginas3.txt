@@ -5,17 +5,20 @@ https://medium.com/@esanjiv/complete-beginner-guide-to-publish-an-angular-librar
 https://github.com/mrsan22/NgxMatTypeahead
 https://angular.io/guide/creating-libraries
 https://blog.angulartraining.com/create-your-own-libraries-with-angular-cli-7b434600bbb7
+https://medium.com/angular-in-depth/creating-a-library-in-angular-6-87799552e7e5
 
 https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11
 https://github.com/sulco/angular-lib-demo
 
 workspace
 https://devdactic.com/ionic-multi-app-shared-library/
+https://angular.io/guide/file-structure#multiple-projects
 
 angular and ionic
 https://stackoverflow.com/questions/55330085/create-ionic-4-app-inside-angular-cli-projects-structure
 https://stack247.wordpress.com/2019/03/11/integrate-ionic-in-existing-angular-project/
 
+https://devdactic.com/angular-ionic-library/
 https://devdactic.com/ionic-multi-app-shared-library/
 https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project/
 https://angular.io/guide/file-structure

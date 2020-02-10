@@ -1,0 +1,54 @@
+Angular multiprojects with ionic
+
+1) crear el workspace
+ng new my-workspace --createApplication="false"
+
+--para agregar un proyecto de angular
+2)agregar proyecto de angular
+ng generate application my-first-app
+
+3)para ejecutar
+ng serve -o --project my-first-app
+
+--para agregar un proyecto de ionic
+2)verificar si esta creada en la raiz del proyecto la carpeta "projects" sino esta creada, crearla
+3)verificar si esta creado en la raiz del proyecto el archivo "ionic.config.json", si no esta creado crearlo y ponerle el siguiente contenido:
+
+{
+  "projects": {}
+}
+
+4)cambiarse al directorio "projects" y aqui crear los proyectos de ionic:
+
+cd ./projects
+# Create our Ionic Apps
+ionic start appOne blank
+ionic start appTwo tabs
+
+-- si se va a tener una carpeta "node_modules" compartida se deben crear asi:
+
+ionic start appOne blank --no-deps
+
+Luego en el archivo "angular.json" en "$schema" hacer que apunte a la ruta donde esta la carpeta "node_modules"
+
+--verificamos que el archivo "ionic.config.json" cambia agregando los proyectos de ionic creados
+
+5)ir al archivo "angular.json" de cada proyecto creado y poner el nombre del proyecto en lugar de "app" en donde corresponda.
+6)verificar si corre el proyecto, ir a la raiz del proyecto y ejecutarlo como se ejecuta un archivo en ionic, pero apuntando al proyecto
+
+ionic serve --project appOne
+
+7)Si se va a compartir la carpeta "node_modules" en el archivo "package.json" copiar las dependencias
+de un proyecto de ionic y agregarlas, luego ejecutar "npm install" 
+
+
+-------------------------------
+
+Si se presenta un error: "error TS1086: An accessor cannot be declared in an ambient context."
+
+Se debe actualizar el typescript, pero si al hacer la actualizacion presenta un error que indica que el 
+angular funciona con una version menor de typescript, entonces se debe actualizar el angular:
+
+ng update --all --force
+
+Esto actualizara todos los paquetes de angular a su ultima version.
