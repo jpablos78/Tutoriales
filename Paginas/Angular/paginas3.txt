@@ -10,6 +10,9 @@ https://medium.com/angular-in-depth/creating-a-library-in-angular-6-87799552e7e5
 https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11
 https://github.com/sulco/angular-lib-demo
 
+https://medium.com/@SirMaxxx/angular-6-creating-a-shareable-control-library-6a27f0ebe5c2 **
+https://www.stackchief.com/blog/Angular%20Module%20vs.%20Library%20vs.%20Application%20vs.%20Workspace
+
 workspace
 https://devdactic.com/ionic-multi-app-shared-library/
 https://angular.io/guide/file-structure#multiple-projects

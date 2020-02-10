@@ -1,0 +1,51 @@
+librerias en angular/ionic
+
+-en un proyecto normal
+1) abrir el proyecto en vscode
+
+2) crear la libreria
+ng generate library mi-libreria
+
+--la libreria se creara dentro de una carpeta llamada "projects"
+
+--si se genera la libreria agregandole --prefix jps (simplificado -p jps) se pondra el prefijo 'jps' al nombre de la libreria.
+--ej sin prefix "selector: 'lib-mi-libreria'" con prefix jps "selector: 'jps-mi-libreria2'"
+
+3) generar la libreria
+ng build mi-libreria
+
+--investigar la funcionalidad de --watch en la generacion de la libreria: ng build mi-libreria --watch
+
+--se creara en el raiz del proyecto una carpeta llamada "dist" donde esta la libreria
+
+importante verificar que en "projects/mi-libreria/src/public_api.ts" esten para exportar los componentes, servicios, etc de mi libreria.
+ej:
+
+export * from './lib/mi-libreria.service';
+export * from './lib/mi-libreria.component';
+export * from './lib/mi-libreria.module';
+
+4) Instalar la libreria.
+--primero se debe generar la libreria
+
+en el proyecto local:
+
+npm install dist/mi-libreria
+
+--investigar como publicar en npm la libreria generada.
+
+5) importar la libreria en un app
+en app.module.ts agregar el modulo de la libreria
+
+import { MiLibreriaModule } from 'mi-libreria';
+
+en la parte de imports
+
+imports: [
+    ...
+    MiLibreriaModule
+  ],
+
+luego se debe usar en el componente que se necesite, por ejemplo un componente de la libreria en un archivo html.
+
+<lib-mi-libreria></lib-mi-libreria>
