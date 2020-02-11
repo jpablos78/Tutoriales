@@ -1,0 +1,146 @@
+Angular multiprojects with ionic
+
+1) crear el workspace
+ng new my-workspace --createApplication="false"
+
+--la version 8 da problemas, se recomienda actualizar a la version 9
+
+**opcional**  ng update --all --force
+
+--angular--
+-------------------------------------------------------------------------------
+--para agregar un proyecto de angular
+2)agregar proyecto de angular
+ng generate application my-first-app
+
+3)para ejecutar
+ng serve -o --project my-first-app
+
+4)para generar pagina de produccion
+ng build --prod --base-href ./ --project=my-first-app
+
+en la carpeta "dist" del raiz del proyecto esta una carpeta con el nombre del proyecto en donde estan 
+los archivos necesarios para que funcione la pagina, copiar esta carpeta en produccion.
+
+--ionic--
+-------------------------------------------------------------------------------
+--para agregar un proyecto de ionic
+2)verificar si esta creada en la raiz del proyecto la carpeta "projects" sino esta creada, crearla
+3)verificar si esta creado en la raiz del proyecto el archivo "ionic.config.json", si no esta creado crearlo y ponerle el siguiente contenido:
+
+{
+  "projects": {}
+}
+
+4)cambiarse al directorio "projects" y aqui crear los proyectos de ionic:
+  -) en el caso de que se quiera tener la carpeta "node_modules" individual para cada proyecto
+    cd ./projects
+    # Create our Ionic Apps
+    ionic start appOne blank
+    ionic start appTwo tabs
+
+  -) si se va a tener una carpeta "node_modules" compartida se deben crear asi:
+    cd ./projects
+    ionic start appOne blank --no-deps
+
+    Luego en el archivo "angular.json" (del proyecto ionic) en "$schema" hacer que apunte a la ruta donde esta la carpeta "node_modules"
+
+--verificamos que el archivo "ionic.config.json" cambia agregando los proyectos de ionic creados
+
+5)ir al archivo "angular.json" de cada proyecto creado y poner el nombre del proyecto en lugar de "app" en donde corresponda.
+
+6)Si se va a compartir la carpeta "node_modules" en el archivo "package.json" copiar las dependencias
+de un proyecto de ionic y agregarlas, luego ejecutar "npm install" 
+
+7)verificar si corre el proyecto, ir a la raiz del proyecto y ejecutarlo como se ejecuta un archivo en ionic, pero apuntando al proyecto
+(por siacaso cerrar y volver a abrir el proyecto)
+
+ionic serve --project appOne
+
+8)para generar pagina de produccion (webapp)
+en el raiz del proyecto
+
+ionic build --prod --project=appOne
+
+en el proyecto de ionic buscar una carpeta llamada "www", entrar en esa carpeta y en el archivo index.html
+buscar 
+
+<base href="/" />
+
+y reemplazar por
+
+<base href="./" />
+
+luego esa carpeta copiarla a produccion y renombrarla al nombre que necesitemos.
+
+9)generar una apk en android
+seguir el paso 8.
+
+-instalar capacitor si no esta instalado
+
+npm install --save @capacitor/core @capacitor/cli
+
+-una vez que termine la instalacion:
+
+npx cap init
+
+-poner nombre de app y id
+
+-esto genera un archivo capacitor.config.json 
+
+--verificar si se puede modificar la ruta donde apunta la carpeta "www"
+
+-copiar la capeta "www" a la raiz del proyecto (o ver si modificando capacitor.config.json se puede hacer que apunte a donde esta el proyecto ionic que tiene la carpeta "www")
+
+npx cap add android
+
+-se creara una carpeta llamada "android" en donde esta el proyecto que puede ser abierto con android.
+
+-para abrir el proyecto en android
+
+npx cap open android
+
+-y desde ahi podemos generar un apk.
+
+--Adicional, si se crea una libreria se debe entrar en el archivo "tsconfig.json" del proyecto en ionic y adiconar la ruta de la libreria
+ejemplo
+--archivo tsconfig.json
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "mi-libreria": [
+        "../../dist/mi-libreria/mi-libreria",
+        "../../dist/mi-libreria"
+      ]
+    }
+  }
+}
+
+-------------------------------
+
+Si se presenta un error: "error TS1086: An accessor cannot be declared in an ambient context."
+
+Se debe actualizar el typescript, pero si al hacer la actualizacion presenta un error que indica que el 
+angular funciona con una version menor de typescript, entonces se debe actualizar el angular:
+
+ng update --all --force
+
+Esto actualizara todos los paquetes de angular a su ultima version.
