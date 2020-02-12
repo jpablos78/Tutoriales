@@ -49,3 +49,8 @@ imports: [
 luego se debe usar en el componente que se necesite, por ejemplo un componente de la libreria en un archivo html.
 
 <lib-mi-libreria></lib-mi-libreria>
+
+para generar un componente, servicio, etc se debe apuntar al proyecto que tiene la libreria:
+
+ng g c mi-componente --project mi-libreria
+ng g s mi-componente --project mi-libreria
