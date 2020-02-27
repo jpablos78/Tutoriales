@@ -6,3 +6,16 @@ https://stackoverflow.com/questions/56318774/ionic-4-pagination
 
 parametros from queryParameters
 https://stackoverflow.com/questions/47455734/how-to-get-query-parameters-from-url-in-angular-5
+
+
+--
+tomar nota de como enviar objetos a travez de routerlink y routernavigate y de como recibirlos en la pagina de destino.
+
+
+
+--assets
+https://ordina-jworks.github.io/architecture/2019/09/13/angular-include-assets-libraries.html
+https://medium.com/@nit3watch/angular-shared-assets-with-multiple-apps-nrwl-nx-b4801c05c771
+
+--para enviar un objeto json desde queryParameters y tambien desde parameter router --recomendado
+https://stackoverflow.com/questions/47836193/angular-passing-object-to-input-parameter-with-routerlink
