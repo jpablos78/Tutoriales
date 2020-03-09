@@ -41,3 +41,16 @@ https://stackoverflow.com/questions/34660263/angular2-conditional-routing
 ////
 error TS1086: An accessor cannot be declared in an ambient context.
 actalizar el tipescript y si da error de version acualizar el angular.
+
+
+
+dinamic enviroment
+https://christianlydemann.com/implementing-dynamic-environments-in-angular-for-avoiding-one-build-per-environment/
+https://github.com/lydemann/dynamic-config-demo/tree/master/src/app
+
+leer archivo json y ponerlo como servicion sin http
+https://stackoverflow.com/questions/47206924/angular-5-service-to-read-local-json-file
+
+como importar un archivo json
+https://medium.com/@baerree/angular-7-import-json-14f8bba534af
+https://www.techiediaries.com/import-local-json-files-in-typescript/
