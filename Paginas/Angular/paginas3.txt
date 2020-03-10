@@ -54,3 +54,9 @@ https://stackoverflow.com/questions/47206924/angular-5-service-to-read-local-jso
 como importar un archivo json
 https://medium.com/@baerree/angular-7-import-json-14f8bba534af
 https://www.techiediaries.com/import-local-json-files-in-typescript/
+
+
+ngstyle
+-------
+https://ultimatecourses.com/blog/using-ngstyle-in-angular-for-dynamic-styling
+https://blog.angulartraining.com/whats-the-difference-between-style-and-ngstyle-in-angular-68a3301c2ae6
