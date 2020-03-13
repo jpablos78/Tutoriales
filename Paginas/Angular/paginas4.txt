@@ -1,0 +1,14 @@
+https://forum.ionicframework.com/t/ionic-4-using-ionic-native-file-in-browser-cordova-not-available/145451/6
+https://medium.com/ramsatt/ionic-4-native-camera-with-image-upload-953ca2ddd9cc
+https://www.itechinsiders.com/2019/02/how-to-upload-document-using-file-chooser-in-ionic3-and-ionic4/
+https://devdactic.com/ionic-4-file-explorer/
+https://devdactic.com/ionic-4-image-upload-storage/
+https://stackoverflow.com/questions/56720492/capture-and-upload-image-to-server-using-ionic-4
+https://www.freakyjolly.com/ionic-4-image-upload-with-progress-in-firestore-and-firestorage-tutorial-by-application/
+
+
+https://capacitor.ionicframework.com/docs/guides/ionic-framework-app/
+
+side menu
+https://market.ionicframework.com/plugins/ionic-2-ionic-material-sidemenu
+https://busy.org/@jaysermendez/ionic-tricks-drawer-behind-status-bar-as-native-apps  
