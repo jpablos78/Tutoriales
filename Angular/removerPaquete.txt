@@ -1,0 +1,2 @@
+npm uninstall <package-name>
+https://stackoverflow.com/questions/50306703/how-to-remove-package-using-angular-cli

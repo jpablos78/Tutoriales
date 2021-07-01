@@ -1,0 +1,2 @@
+renombrar proyecto angular
+https://stackoverflow.com/questions/45891832/how-to-rename-an-angular-project

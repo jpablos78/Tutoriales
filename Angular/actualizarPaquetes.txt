@@ -1,0 +1,20 @@
+actualizar todos los paquetes de packaje.json a la ultima version.
+
+1 forma
+
+npm i -g npm-check-updates
+ncu -u
+npm install
+
+2 forma
+
+npm outdated
+npm update
+
+3 forma ()
+
+npm outdated --para ver los paquetes que estan desactualizados
+ncu -u --para actualizar el packaje.json
+npm install --para instalar los paquetes actualizados.
+
+https://stackoverflow.com/questions/16073603/how-to-update-each-dependency-in-package-json-to-the-latest-version

@@ -27,6 +27,9 @@ npm install font-awesome --save
 Si da error "Error: Can't resolve '@angular/cdk/scrolling'" ejecutar
 npm install @angular/cdk --save
 
+--opcional instalar primeflex
+npm install primeflex --save
+
 instalar los estilos:
 se instala el estilo nova-light en node_modules/primeng/resources/themes estan otros estilos que se puede elegir
 
@@ -43,7 +46,8 @@ o ir al archivo angular.json y copiar el codigo dentro de los array styles (hay 
   "node_modules/primeicons/primeicons.css",
   "node_modules/primeng/resources/themes/nova-light/theme.css",
   "node_modules/primeng/resources/primeng.min.css",
-  "node_modules/font-awesome/css/font-awesome.css" //si se instala font-awesome
+  "node_modules/font-awesome/css/font-awesome.css", //si se instala font-awesome
+  "node_modules/primeflex/primeflex.css" //si se instala primeflex
   //...
 ],
 
