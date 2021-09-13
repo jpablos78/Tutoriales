@@ -1,0 +1,52 @@
+instalar capacitor en proyecto ionic
+
+1)
+ -) Para un proyecto nuevo en el que se quiera instalar capacitor
+	ionic start --capacitor
+
+ -)	Para un proyecto ya creado al que se le quiera añadir capacitor
+	ionic integrations enable capacitor
+
+2) Inicializamos nuestra app
+	npx cap init
+	
+	se debe definir un nombre y luego un id para la app ej
+	myApp
+	com.jpablos.myapp
+
+3) se compila el proyecto
+	ionic build	
+	
+4) se agrega la plataforma android o ios
+	npx cap add android	
+	
+5) para abrir el proyecto en android studio
+	npx cap open android
+
+- Despues de hacer cambios en el proyecto y para que se actualize en android
+
+1) ionic build
+2) npx cap copy	
+
+- en ocasiones para que se actualize hay que salir del proyecto o del mismo vscode.
+
+6) Se puede ejecutar esta sentencia que ejecuta las siguientes sentencias:  ionic build, npx cap copy, npx cap open android
+
+ionic capacitor run android
+
+7) Para que se ejecute en android con live reload (es decir que cada cambio que se haga en ionic se actualize en android y si se esta ejecutando en el phone se refresquen automaticamente los cambios)
+
+ionic capacitor run android -l --external
+(ojo si se usa el live reload se debe especificar una red wifi, por lo que cuando se genera un apk y se ejecuta en un telefono que no este en la red wifi que se especifico en el momento del desarrollo la aplicacion no va a abrir,
+ por lo que el live reload se lo usaria solo en desarrollo y al momento de compilar y generar el apk de produccion se debe ir al archivo capacitor.config.json y buscar la etiqueta "server" y borrarla con su contenido, luego
+ se puede compilar nuevamente sin el live reload y de ahi generar el apk de produccion.)
+
+si ya se abre el android studio, en vscode abrir otro terminar y volverlo a ejecutar cada vez que se realize un cambio.
+
+Si al abrir el proyecto en Android da un error de tipo "Could not read script ... cordova.variables.gradle"
+Ejecutar:
+
+	ionic build
+	npx cap update android
+
+Se recomienda hacer esto cuando se baja de github el proyecto actualizado a otra pc y se añadieron plugins.
